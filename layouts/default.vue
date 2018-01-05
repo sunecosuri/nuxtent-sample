@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <navigation />
     <nuxt/>
     <site-footer />
