@@ -8,9 +8,6 @@
         <nuxt-link to="/about">About</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/" active-class="none"><i class="logo"></i></nuxt-link>
-      </li>
-      <li>
         <nuxt-link to="/blog">Blog</nuxt-link>
       </li>
       <li>
