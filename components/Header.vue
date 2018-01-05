@@ -1,0 +1,41 @@
+<template>
+  <nav class="nav">
+    <ul>
+      <li>
+        <nuxt-link to="/" exact>Home</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/about">About</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/" active-class="none"><i class="logo"></i></nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/blog">Blog</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/contact">Contact</nuxt-link>
+      </li>
+    </ul>
+  </nav>
+</template>
+
+<script>
+export default {
+  props: ['page'],
+  head: {
+    script: [
+    ]
+  }
+}
+</script>
+
+<style scoped>
+.nav {
+  height: 60px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+</style>
