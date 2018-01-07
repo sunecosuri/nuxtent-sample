@@ -1,7 +1,9 @@
 <template>
-<section class="content-container">
-  <h1 class="post-title"> {{ post.title }} </h1>
-  <nuxtent-body :body="post.body" />
+<section class="content-area">
+  <div class="content-container">
+    <h1 class="post-title"> {{ post.title }} {{ te }} </h1>
+    <nuxtent-body :body="post.body" />
+  </div>
 </section>
 </template>
 
@@ -13,18 +15,24 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.content-area
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .content-container
 {
   width: 38rem;
   margin: 0 auto;
   margin-top: 2frem;
 }
-
 .post-title
 {
   font-size: 2.5rem;
-  margin-top: 1rem;
+  margin-top: 4rem;
   margin-bottom: 1rem;
   font-weight: 500;
   color: #35495e;

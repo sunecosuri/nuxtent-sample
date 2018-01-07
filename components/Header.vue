@@ -5,13 +5,10 @@
         <nuxt-link to="/" exact>Home</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/about">About</nuxt-link>
+        <nuxt-link to="/profile">Profile</nuxt-link>
       </li>
       <li>
         <nuxt-link to="/blog">Blog</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/contact">Contact</nuxt-link>
       </li>
     </ul>
   </nav>
@@ -19,11 +16,6 @@
 
 <script>
 export default {
-  props: ['page'],
-  head: {
-    script: [
-    ]
-  }
 }
 </script>
 

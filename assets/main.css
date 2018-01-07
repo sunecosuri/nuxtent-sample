@@ -39,17 +39,6 @@ ul li {
 .nav li a:hover {
   color: #ddd;
 }
-.logo {
-  position: relative;
-  display: inline-block;
-  top: 3px;
-  width: 29px;
-  height: 21px;
-  background-image: url('./logo.png')
-}
-.hero-unit {
-  height: 500px;
-}
 main {
   background: #fff;
 }

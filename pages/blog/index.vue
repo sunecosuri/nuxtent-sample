@@ -1,5 +1,6 @@
 <template>
-<p></p>
+<section class="content-container">
+</section>
 </template>
 
 <script>
@@ -7,7 +8,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .content-container
 {
   width: 38rem;

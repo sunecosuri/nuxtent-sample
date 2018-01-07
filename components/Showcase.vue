@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .showcase p
 {
   margin-top: 2rem;
