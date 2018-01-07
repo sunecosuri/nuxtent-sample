@@ -1,13 +1,14 @@
 <template>
   <div>
-    
     <navigation />
-    <nuxt/>
+    <div class="container">
+      <nuxt/>
+    </div>
     <site-footer />
   </div>
 </template>
 
-<script scoped>
+<script>
 import Navigation from '~/components/Header.vue'
 import SiteFooter from '~/components/Footer.vue'
 export default {
@@ -18,111 +19,4 @@ export default {
 }
 </script>
 
-<style>
-body,
-html {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 0;
-  margin: 0;
-  font-size: 20px;
-  font-weight: 300;
-  background: #43C6AC;
-}
-h1 {
-  text-shadow: .5px .5px #333;
-  font-weight: 300;
-  font-size: 60px;
-}
-a {
-  transition: 100ms;
-  text-decoration: none;
-  color: #fff
-}
-ul li {
-  display: inline-block;
-}
-.nav {
-  background: #333;
-  font-size: 18px;
-}
-.nav li {
-  margin-right: 30px;
-}
-.nav li a {
-  color: #fff;
-}
-.nav li a.nuxt-link-active {
-  border-bottom: 1px #ddd solid;
-}
-.nav li a:hover {
-  color: #ddd;
-}
-.logo {
-  position: relative;
-  display: inline-block;
-  top: 3px;
-  width: 29px;
-  height: 21px;
-  /* background-image: url('./logo.png') */
-}
-.hero-unit {
-  height: 500px;
-}
-main {
-  background: #fff;
-}
-.footer a {
-  color: #fff;
-}
-.footer a:hover {
-  color: #ddd;
-}
-.footer i {
-  transition: 100ms;
-}
-.footer i:hover {
-  color: #ddd;
-}
-@media (max-width: 768px) {
-  .nav ul {
-    padding-left: 20px;
-  }
-  .nav li {
-    margin-right: 15px;
-  }
-  .hero-unit {
-    height: 400px;
-  }
-  h1 {
-    top: 38% !important;
-    font-size: 50px;
-  }
-  .footer .col {
-    width: 100% !important;
-  }
-}
-
-.clearfix:after {
-   visibility: hidden;
-   display: block;
-   font-size: 0;
-   content: " ";
-   clear: both;
-   height: 0;
-   }
-.clearfix { display: inline-block; }
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-.social-icon {
-  font-size: 46px;
-  color: #fff;
-}
-
-/* Route transitions */
-.page-enter-active, .page-leave-active {
-  transition: opacity .5s;
-}
-.page-enter, .page-leave-active {
-  opacity: 0.7;
-}
-</style>
+<style src="~/assets/main.css" />
