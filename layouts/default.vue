@@ -1,4 +1,5 @@
 <template>
+<!-- layout/default.vue -->
   <div>
     <navigation />
     <div class="container">
