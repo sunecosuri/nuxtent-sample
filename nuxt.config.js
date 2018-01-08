@@ -1,10 +1,9 @@
 module.exports = {
   head: {
-    title: 'ロリポップ！マネージドクラウド|オープンβ提供中！',
-    titleTemplate: '%s - ロリポップ！マネージドクラウド | 無料β版提供中',
+    title: 'Nuxtent Boiler Template',
+    titleTemplate: '%s - Nuxtent Boiler Template',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Nuxtent project' }
     ],
     link: [

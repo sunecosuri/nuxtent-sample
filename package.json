@@ -5,9 +5,11 @@
   "author": "",
   "private": true,
   "dependencies": {
-    "nuxtent": "latest",
+    "@nuxtjs/axios": "latest",
+    "markdown-it-link-attributes": "^2.0.0",
     "nuxt": "^1.0.0-rc11",
-    "@nuxtjs/axios": "latest"
+    "nuxtent": "latest",
+    "prismjs": "^1.9.0"
   },
   "scripts": {
     "dev": "nuxt",

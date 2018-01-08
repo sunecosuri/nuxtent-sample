@@ -3,20 +3,10 @@
       <div class="footer-notes">
         <div class="col" style="float:right">
           <div>
-            <a style="margin-right:10px;" href="https://github.com/sunecosuri" target="_blank">
-              <i class="fa fa-github social-icon"></i>
-            </a>
-            <a href="https://twitter.com/sunecosuri" target="_blank">
-              <i class="fa fa-twitter social-icon"></i>
-            </a>
-          </div>
-          <div>
-              <div>
-                powered by <nuxt-router :to="`https://nuxtjs.org`">Nuxt.js</nuxt-router> && <nuxt-router :to="`https://mc.lolipop.jp`">ロリポップ！マネージドクラウド</nuxt-router>
-              </div>
+            powered by <nuxt-router :to="`https://nuxtjs.org`">Nuxt.js</nuxt-router> && 
+            <nuxt-router :to="`https://mc.lolipop.jp`">ロリポップ！マネージドクラウド</nuxt-router>
           </div>
         </div>
-        <div class="clearfix"></div>
       </div>
     </footer>
   </div>
@@ -28,6 +18,7 @@
   color: #fff;
   font-size: 18px;
   width: 100%;
+  position: absolute;
   bottom: 0;
   height: 5em;
 }

@@ -1,7 +1,7 @@
 <template>
 <section class="content-area">
   <div class="content-container">
-    <h1 class="post-title"> {{ post.title }} {{ te }} </h1>
+    <h1 class="post-title"> {{ post.title }}</h1>
     <nuxtent-body :body="post.body" />
   </div>
 </section>

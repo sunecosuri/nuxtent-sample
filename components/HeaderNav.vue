@@ -1,3 +1,4 @@
+<!-- components/HeaderNav.vue　 -->
 <template>
   <nav class="nav">
     <ul>

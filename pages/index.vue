@@ -2,16 +2,24 @@
   <section class="home-container">
     <div>
       <h2 class="home-slogan">
-        Seamlessly use content files in your Nuxt.js sites.
+        記事一覧ページ
       </h2>
       <div class="home-content">
-        <p>
-          隴西の李徴は博学才穎、天宝の末年、若くして名を虎榜に連ね、ついで江南尉に補せられたが、性、狷介、自ら恃むところ頗る厚く、賤吏に甘んずるを潔しとしなかった。
+        <p v-for="post in posts">
+          <a :href="post.permalink">{{post.title}}</a>
         </p>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  asyncData: async ({ app }) => ({
+    posts: await app.$content('/').getAll()
+  })
+}
+</script>
 
 <style>
 .home-container
@@ -23,7 +31,6 @@
 }
 .home-content
 {
-  background-color: #fff;
   margin: 0 auto;
   margin-top: 5px;
   padding: 30px;
@@ -45,6 +52,7 @@
 }
 .home-content .p 
 {
+  text-align: left;
   margin: 0 auto;
   color: #333;
   display: block;

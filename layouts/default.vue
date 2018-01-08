@@ -1,23 +1,24 @@
 <!-- layouts/default.vue -->
 <template>
   <div>
-    <navigation />
-    <div class="container">
-      <nuxt/>
-    </div>
+    <header-nav />
+    <nuxt/>
     <site-footer />
   </div>
 </template>
 
 <script>
-import Navigation from '~/components/Header.vue'
+// 使うコンポーネントを読み込み
+import HeaderNav from '~/components/HeaderNav.vue'
 import SiteFooter from '~/components/Footer.vue'
+// 利用するコンポーネントを設定
 export default {
   components: {
-    Navigation,
+    HeaderNav,
     SiteFooter
   }
 }
 </script>
 
 <style src="~/assets/main.css" />
+
