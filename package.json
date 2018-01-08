@@ -13,8 +13,8 @@
   },
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt generate",
+    "build": "nuxt generate",
+    "start": "HOST=0.0.0.0 PORT=80 nuxt",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
