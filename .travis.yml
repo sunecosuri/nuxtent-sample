@@ -1,0 +1,6 @@
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/dist aged-yoron-9294@ssh-1.mc.lolipop.jp:/var/www/html
+  on:
+    branch: master
