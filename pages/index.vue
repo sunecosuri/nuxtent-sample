@@ -2,7 +2,7 @@
   <section class="home-container">
     <div>
       <h2 class="home-slogan">
-        記事一覧ページ
+        記事一覧ページtest
       </h2>
       <div class="home-content">
         <p v-for="post in posts">
